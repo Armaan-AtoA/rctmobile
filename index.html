@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refuel Carbon Tech | The Future of Emission Conversion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+</div>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo-wrapper" onclick="showPage('home')">
+            <img src="logo.png" alt="Refuel Logo" class="nav-logo" onerror="this.style.display='none'">
+            <span class="logo-text">REFUEL <span class="logo-sub">CARBON TECH</span></span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a onclick="showPage('home'); closeMenu()"><i class="fas fa-home"></i> Home</a>
+            <a onclick="showPage('tech'); closeMenu()"><i class="fas fa-flask"></i> Technology</a>
+            <a onclick="showPage('app'); closeMenu()"><i class="fas fa-mobile-alt"></i> EcoGain</a>
+            <a onclick="showPage('business'); closeMenu()"><i class="fas fa-chart-line"></i> Strategy</a>
+            <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+        <div class="hero-section">
+            <h1 class="animate-in" style="--d:0.08s">
+                Sustainability is not<br>a trend<span class="accent">.</span><br>
+                It's a <span class="accent">responsibility</span>.
+            </h1>
+            <p class="hero-lead animate-in" style="--d:0.18s">Every small act today ripples into a better world for all tomorrow.</p>
+            <div class="hero-cta animate-in" style="--d:0.28s">
+                <button class="btn-primary" onclick="showPage('tech')">Explore Technology <i class="fas fa-arrow-right"></i></button>
+                <button class="btn-ghost" onclick="showPage('app')">EcoGain App <i class="fas fa-leaf"></i></button>
+            </div>
+            <div class="hero-stats animate-in" style="--d:0.38s">
+                <div class="stat-glass">
+                    <div class="stat-num">2×</div>
+                    <p>Faster warming in the Middle East vs. global average</p>
+                </div>
+                <div class="stat-glass">
+                    <div class="stat-num">83%</div>
+                    <p>Projected profit margin</p>
+                </div>
+                <div class="stat-glass">
+                    <div class="stat-num">95%</div>
+                    <p>CO₂ emission reduction vs. conventional fuels</p>
+                </div>
+                <div class="stat-glass">
+                    <div class="stat-num">$50M</div>
+                    <p>Estimated initial investment for multiple units</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-label">The Problem</div>
+        <div class="content-split">
+            <div class="text-side">
+                <h2>The Hard Truth</h2>
+                <p>Factories are the primary source of CO₂ emissions, yet progress has been paralysed by concerns over profitability and widespread adoption. Existing solutions like carbon capture and renewable energy technologies have had limited success.</p>
+                <p>The Middle East is warming at <strong>twice the global average</strong>, making localised, scalable solutions an urgent necessity — not a long-term aspiration.</p>
+                <p>We aren't just "capturing" carbon to hide it. We are transforming it into <strong>Hydrogen</strong> and <strong>Green Methanol</strong> — turning a global liability into a commercially profitable asset that supports a circular economy.</p>
+            </div>
+            <div class="focus-glass">
+                <div class="focus-icon"><i class="fas fa-globe-asia"></i></div>
+                <h3>Regional Focus: Middle East</h3>
+                <p>Specifically designed for deployment across the UAE and surrounding regions, leveraging their proactive stance on climate change and ambitious sustainability initiatives. Our solution addresses the unique climate challenges of this region head-on.</p>
+                <div class="focus-tag">Designed for UAE &amp; wider ME region</div>
+            </div>
+        </div>
+
+        <div class="section-label">Our Approach</div>
+        <div class="mission-grid">
+            <div class="m-card">
+                <div class="m-icon"><i class="fas fa-industry"></i></div>
+                <h3>Point-Source Capture</h3>
+                <p>Intercepting exhaust directly at the factory gate using nanoparticle air filters and large-scale catalytic converters before any emission enters the atmosphere.</p>
+            </div>
+            <div class="m-card">
+                <div class="m-icon"><i class="fas fa-vial"></i></div>
+                <h3>Circular Economy</h3>
+                <p>Converting captured CO₂ waste into high-demand Green Methanol and Hydrogen fuel — making carbon capture commercially self-sustaining and economically viable.</p>
+            </div>
+            <div class="m-card">
+                <div class="m-icon"><i class="fas fa-city"></i></div>
+                <h3>Urban Collection</h3>
+                <p>Polystyrene resin slabs placed across urban environments passively capture atmospheric CO₂, collected daily by a dedicated fleet of 10+ transport trucks.</p>
+            </div>
+            <div class="m-card">
+                <div class="m-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Community Action</h3>
+                <p>EcoGain rewards individuals for everyday sustainable choices — from home CO₂ processing to clothing donation — via our smart app platform.</p>
+            </div>
+        </div>
+
+        <div class="section-label">Green Methanol Benefits</div>
+        <div class="benefit-row">
+            <div class="benefit-card">
+                <span class="benefit-num">60–95%</span>
+                <p>Reduction in CO₂ emissions vs. conventional fuels</p>
+            </div>
+            <div class="benefit-card">
+                <span class="benefit-num">60–80%</span>
+                <p>Reduction in Nitrogen Oxide (NOx) emissions</p>
+            </div>
+            <div class="benefit-card">
+                <span class="benefit-num">~100%</span>
+                <p>Near elimination of Sulphur Oxide &amp; particulate matter</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH -->
+    <section id="tech" class="page">
+        <div class="page-header">
+            <div class="eyebrow"><span>How it works</span></div>
+            <h2>Industrial Engineering</h2>
+            <p class="page-lead">An 11-hour pipeline from raw industrial exhaust to clean, commercially sellable fuel.</p>
+        </div>
+
+        <div class="tech-timeline">
+            <div class="t-step">
+                <div class="t-badge">Step 01 · 0–4 Hours</div>
+                <h3>Source Capture &amp; Filtration</h3>
+                <p>Factory exhaust passes through <strong>nanoparticle air filters</strong> — which have excellent adsorptive properties for capturing airborne contaminants across a broad spectrum — then through a large-scale <strong>catalytic converter</strong>, converting harmful pollutants (CO, hydrocarbons, nitrogen oxides) into CO₂, nitrogen, and water vapour.</p>
+                <div class="info-box">
+                    <div class="info-box-title"><i class="fas fa-info-circle"></i> What is a Catalytic Converter?</div>
+                    <p>An emissions control device that converts harmful pollutants into less harmful byproducts. Our system uses a significantly upscaled industrial model to process entire factory exhaust streams, reducing three key gases: Carbon Monoxide, Volatile Organic Compounds (VOCs), and Nitrogen Oxides.</p>
+                </div>
+                <p>The clean CO₂ stream then passes through <strong>Polystyrene Resin</strong> — a modified polymer with ion-exchange and nanoporous materials that selectively absorbs CO₂. Nitrogen and water vapour are safely released back into the atmosphere.</p>
+                <div class="info-box">
+                    <div class="info-box-title"><i class="fas fa-info-circle"></i> How Polystyrene Resin Works</div>
+                    <p>The resin contains carbonate ions that bind CO₂ when the surrounding environment is dry, and releases it when wet — so CO₂ is extracted simply by immersing the slab in water, forming carbonic acid (H₂CO₃). The modular core technology increases the system's adaptability in both urban and industrial environments.</p>
+                </div>
+            </div>
+
+            <div class="t-step">
+                <div class="t-badge">Step 02 · 4–7 Hours</div>
+                <h3>Electrolysis &amp; Piezoelectric Power</h3>
+                <p>Carbonic acid is introduced into an <strong>electrolysis chamber</strong>, converting CO₂ into hydrogen gas. Electricity for this process is generated by <strong>piezoelectric crystals</strong> beneath the factory floor — factory personnel movement induces mechanical stress, generating electricity. Surplus energy is transmitted to the city grid, reducing dependence on external power sources.</p>
+                <div class="chem-grid">
+                    <div class="chem-card">
+                        <div class="chem-label">Aqueous Electrolyte</div>
+                        <div class="chem-val">Normal Water (H₂O)</div>
+                    </div>
+                    <div class="chem-card">
+                        <div class="chem-label">Organic Electrolyte</div>
+                        <div class="chem-val">Sodium Perchlorate (NaClO₄)</div>
+                        <div class="chem-note">Easier sodium dissociation. Separated by NASICON membrane.</div>
+                    </div>
+                    <div class="chem-card">
+                        <div class="chem-label">Cathode</div>
+                        <div class="chem-val">Platinum (Pt)</div>
+                        <div class="chem-note">Highly oxidation-resistant — remains inert during redox reactions.</div>
+                    </div>
+                    <div class="chem-card">
+                        <div class="chem-label">Anode</div>
+                        <div class="chem-val">Sodium Metal (Na)</div>
+                        <div class="chem-note">Abundant and low-cost, making it economical at industrial scale.</div>
+                    </div>
+                </div>
+                <p>Hydrogen gas is captured and stored in <strong>graphene-based containers</strong> — chosen for their superior surface area-to-volume ratio, thermal and mechanical properties, and ability to shorten hydrogen diffusion distances for faster exchange and reduced release temperature.</p>
+            </div>
+
+            <div class="t-step">
+                <div class="t-badge">Step 03 · 7–11 Hours</div>
+                <h3>Liquefaction &amp; Green Methanol Synthesis</h3>
+                <p><strong>70% of hydrogen</strong> is allocated for Green Methanol conversion. The remaining <strong>30%</strong> is directed to fuel cells for clean electricity generation with minimal environmental impact.</p>
+                <p>For methanol conversion, hydrogen undergoes <strong>cryogenic liquefaction</strong> — cooled below −253°C (−423°F) using helium as a refrigerant in a dedicated cryogenic refrigerator. Liquid CO₂ (sourced from urban polystyrene resin collection) is then injected into the liquid hydrogen stream through Carbon Nanotubes.</p>
+                <div class="info-box">
+                    <div class="info-box-title"><i class="fas fa-info-circle"></i> Why Carbon Nanotubes for Transport?</div>
+                    <p>CNTs possess impressive chemical stability, large surface area, and hollowness — drawing liquid inside by capillarity. They enable high energy density hydrogen transport with large capacity and transition flexibility at room temperature, ensuring safety at scale. Catalyst materials including Platinum, Rhodium, Palladium, and Al₂O₃ accelerate the conversion reactions.</p>
+                </div>
+                <p>The mixture passes through a <strong>pressure-reducing regulator</strong>, a <strong>flow controller</strong>, and an <strong>Al₂O₃ (aluminium oxide) catalyst</strong> to accelerate the methanol synthesis reaction. Final Green Methanol is distributed via underground pipelines.</p>
+                <div class="flow-steps">
+                    <div class="flow-step">Liquid H₂</div>
+                    <i class="fas fa-arrow-right flow-arrow"></i>
+                    <div class="flow-step">CNT Transport</div>
+                    <i class="fas fa-arrow-right flow-arrow"></i>
+                    <div class="flow-step">CO₂ Injection</div>
+                    <i class="fas fa-arrow-right flow-arrow"></i>
+                    <div class="flow-step">Al₂O₃ Catalyst</div>
+                    <i class="fas fa-arrow-right flow-arrow"></i>
+                    <div class="flow-step accent-step">Green Methanol ✓</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-label">Advanced Materials</div>
+        <div class="materials-grid">
+            <div class="mat-card">
+                <div class="mat-icon"><i class="fas fa-atom"></i></div>
+                <h4>Graphene Containers</h4>
+                <p>For gaseous hydrogen storage. High surface-area-to-volume ratio enables efficient storage. Nanoparticles promote fast hydrogen exchange by shortening diffusion distances and reducing release temperature.</p>
+            </div>
+            <div class="mat-card">
+                <div class="mat-icon"><i class="fas fa-project-diagram"></i></div>
+                <h4>Carbon Nanotubes</h4>
+                <p>For liquid hydrogen transport. CNTs draw liquid inside by capillarity, providing safe high-energy-density storage with large capacity and transition flexibility at room temperature.</p>
+            </div>
+            <div class="mat-card">
+                <div class="mat-icon"><i class="fas fa-cube"></i></div>
+                <h4>Polystyrene Resin</h4>
+                <p>Core modular CO₂ capture technology. Contains ion-exchange or nanoporous materials that bind CO₂ in dry conditions and release it when wet — enabling simple, low-energy CO₂ extraction at scale.</p>
+            </div>
+            <div class="mat-card">
+                <div class="mat-icon"><i class="fas fa-filter"></i></div>
+                <h4>Nanoparticle Air Filters</h4>
+                <p>Excellent adsorptive properties for capturing airborne contaminants across a broad spectrum, ensuring factory exhaust is thoroughly cleaned before entering the catalytic converter.</p>
+            </div>
+        </div>
+
+        <div class="section-label">Technical Q&amp;A</div>
+        <div class="qa-grid">
+            <div class="qa-card">
+                <div class="qa-q">Green vs. conventional methanol?</div>
+                <p>Green methanol is produced using renewable sources (biomass gasification, renewable electricity, captured CO₂). Traditional methanol is derived from fossil fuels. Green methanol reduces CO₂ emissions by up to 95%.</p>
+            </div>
+            <div class="qa-card">
+                <div class="qa-q">Why sodium perchlorate as the organic electrolyte?</div>
+                <p>It facilitates easier dissociation of sodium metal, enhancing electrolysis efficiency. The Na anode is kept in organic electrolyte separated by a NASICON membrane to prevent aqueous corrosion.</p>
+            </div>
+            <div class="qa-card">
+                <div class="qa-q">Why platinum as the cathode?</div>
+                <p>Platinum is highly resistant to oxidation and remains inert during redox reactions — ensuring unchanged performance across millions of cycles at industrial scale without degradation.</p>
+            </div>
+            <div class="qa-card">
+                <div class="qa-q">Graphene vs. carbon nanotubes — when to use which?</div>
+                <p>Graphene is ideal for gaseous hydrogen storage due to its surface properties. Carbon Nanotubes suit liquid hydrogen transport due to their hollow tubular structure and capillary action.</p>
+            </div>
+            <div class="qa-card">
+                <div class="qa-q">How does the AI monitoring system work?</div>
+                <p>AI-enhanced monitoring systems track CO₂ levels, emissions, and operational efficiency across all units in real time, coordinated across manufacturing plants and centralised facilities — providing data-driven insights to optimise process efficiency.</p>
+            </div>
+            <div class="qa-card">
+                <div class="qa-q">Why helium as the cryogenic refrigerant?</div>
+                <p>Helium efficiently cools hydrogen below −253°C to achieve liquid form, a necessary step in converting hydrogen into green methanol. Regular helium replenishment ensures the cooling process runs continuously at scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- APP -->
+    <section id="app" class="page">
+        <div class="page-header">
+            <div class="eyebrow"><span>Community Platform</span></div>
+            <h2>EcoGain App</h2>
+            <p class="page-lead">Bridging industrial carbon capture with everyday community action through a rewarding, accessible platform.</p>
+        </div>
+
+        <div class="app-hero-glass">
+            <div class="app-hero-text">
+                <h3>Connecting Community to Carbon Capture</h3>
+                <p>EcoGain allows individuals to actively participate in the Refuel Carbon Tech project. Residents acquire polystyrene resin slabs for home use — on a daily or alternate-day basis, factory trucks collect, process, and return the slabs. Each processing cycle earns points redeemable for green fuel, creating a direct, tangible link between individual action and environmental impact.</p>
+            </div>
+            <div class="app-hero-icon"><i class="fas fa-seedling"></i></div>
+        </div>
+
+        <div class="app-features">
+            <div class="f-card">
+                <div class="f-header">
+                    <div class="f-icon green"><i class="fas fa-coins"></i></div>
+                    <h3>Green Points</h3>
+                </div>
+                <p>Earned every time your home polystyrene resin slab is collected and processed. Accumulate <strong>100 Green Points</strong> and redeem them directly for Green Methanol — usable as vehicle fuel at participating stations.</p>
+                <div class="f-tag green-tag">Home Carbon Processing</div>
+            </div>
+            <div class="f-card">
+                <div class="f-header">
+                    <div class="f-icon blue"><i class="fas fa-tshirt"></i></div>
+                    <h3>Blue Points</h3>
+                </div>
+                <p>Earned by donating unused clothing through the app's textile circularity programme. Redeemable at partner sustainable textile brands, promoting a full circular economy beyond just carbon capture.</p>
+                <div class="f-tag blue-tag">Textile Circularity</div>
+            </div>
+            <div class="f-card f-wide">
+                <div class="f-header">
+                    <div class="f-icon accent"><i class="fas fa-robot"></i></div>
+                    <h3>AI Green Consultant</h3>
+                </div>
+                <p>An intelligent assistant built into EcoGain that assesses your home's environmental impact and provides personalised, actionable sustainability recommendations — from upgrading to energy-efficient appliances to implementing a home recycling programme. The AI tracks your personal carbon data and reports progress over time, all via a conversational interface that makes sustainable living genuinely accessible.</p>
+            </div>
+        </div>
+
+        <div class="section-label">How the slab system works</div>
+        <div class="hiw-steps">
+            <div class="hiw-step"><div class="hiw-num">1</div><p>Acquire a resin slab via EcoGain</p></div>
+            <div class="hiw-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="hiw-step"><div class="hiw-num">2</div><p>Slab captures CO₂ from home air</p></div>
+            <div class="hiw-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="hiw-step"><div class="hiw-num">3</div><p>Factory truck collects &amp; processes slab daily</p></div>
+            <div class="hiw-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="hiw-step"><div class="hiw-num">4</div><p>Green Points credited to your account</p></div>
+            <div class="hiw-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="hiw-step"><div class="hiw-num">5</div><p>Redeem for Green Methanol at 100 pts</p></div>
+        </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section id="business" class="page">
+        <div class="page-header">
+            <div class="eyebrow"><span>Commercial Strategy</span></div>
+            <h2>Strategy &amp; Operations</h2>
+            <p class="page-lead">Built for long-term profitability, regional scalability, and sustainable operations.</p>
+        </div>
+
+        <div class="biz-grid">
+            <div class="finance-block glass-card">
+                <h3>Budget Breakdown <span class="budget-badge">1,000,000 AED</span></h3>
+                <div class="budget-list">
+                    <div class="b-row">
+                        <div class="b-info"><span>Cryogenic Refrigerator</span><span class="b-val">367,000 AED</span></div>
+                        <div class="b-bar"><div class="b-fill" style="width:36.7%"></div></div>
+                    </div>
+                    <div class="b-row">
+                        <div class="b-info"><span>Electrolysis Systems</span><span class="b-val">314,700 AED</span></div>
+                        <div class="b-bar"><div class="b-fill" style="width:31.4%"></div></div>
+                    </div>
+                    <div class="b-row">
+                        <div class="b-info"><span>Carbon Nanotubes</span><span class="b-val">183,000 AED</span></div>
+                        <div class="b-bar"><div class="b-fill" style="width:18.3%"></div></div>
+                    </div>
+                    <div class="b-row">
+                        <div class="b-info"><span>Catalytic Converters</span><span class="b-val">37,000 AED</span></div>
+                        <div class="b-bar"><div class="b-fill" style="width:3.7%"></div></div>
+                    </div>
+                    <div class="b-row">
+                        <div class="b-info"><span>Air Filters &amp; Resin Systems</span><span class="b-val">18,000 AED</span></div>
+                        <div class="b-bar"><div class="b-fill" style="width:1.8%"></div></div>
+                    </div>
+                </div>
+                <div class="funding-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Full multi-unit investment estimated at <strong>$50M USD</strong>. Ongoing operational costs ~<strong>$10M/year</strong> covering maintenance, raw materials, logistics, and system upgrades. Funded through government grants, private sector investment, and international climate funds.</span>
+                </div>
+            </div>
+
+            <div class="team-block glass-card">
+                <h3>Human Capital</h3>
+                <div class="team-list">
+                    <div class="team-item"><i class="fas fa-user-tie"></i><div><strong>Project Director</strong><p>Strategic leadership, stakeholder management, and overall accountability</p></div></div>
+                    <div class="team-item"><i class="fas fa-tasks"></i><div><strong>Operations Manager</strong><p>Daily supervision, logistics, team liaison, and seamless execution</p></div></div>
+                    <div class="team-item"><i class="fas fa-users"></i><div><strong>100–300 Employees per unit</strong><p>Machinery operation, production targets, and maintaining safe work environments</p></div></div>
+                    <div class="team-item"><i class="fas fa-flask"></i><div><strong>5+ Chemical Engineers</strong><p>CO₂ conversion to H₂ &amp; green methanol — core chemical reaction development</p></div></div>
+                    <div class="team-item"><i class="fas fa-leaf"></i><div><strong>3+ Environmental Engineers</strong><p>Regulatory compliance, sustainable practices, and environmental optimisation</p></div></div>
+                    <div class="team-item"><i class="fas fa-bolt"></i><div><strong>4+ Electrical Engineers</strong><p>Piezoelectric systems, renewable energy integration, and reliable power supply</p></div></div>
+                    <div class="team-item"><i class="fas fa-microscope"></i><div><strong>R&amp;D Team (6+ Researchers)</strong><p>Continuous innovation, system improvement, and technological advancement</p></div></div>
+                    <div class="team-item"><i class="fas fa-truck"></i><div><strong>4+ Logistics Coordinators</strong><p>CO₂ transport from urban collection points and distribution of final products</p></div></div>
+                    <div class="team-item"><i class="fas fa-clipboard"></i><div><strong>3+ Administrative Support</strong><p>Documentation, communication, and team administrative responsibilities</p></div></div>
+                    <div class="team-item"><i class="fas fa-wrench"></i><div><strong>10+ Maintenance Crew</strong><p>Equipment inspection, servicing, and minimising downtime across all facilities</p></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-label">Infrastructure &amp; Equipment</div>
+        <div class="resource-grid">
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-industry"></i></div>
+                <h4>Catalytic Converters</h4>
+                <p>Scaled installation based on number of factories. Filters hazardous exhaust gases and converts them into less toxic byproducts for downstream processing.</p>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-cube"></i></div>
+                <h4>Polystyrene Resin Systems</h4>
+                <p>Multiple units across factories and urban sites. Core modular CO₂ capture technology that increases adaptability in both industrial and urban environments.</p>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-vial"></i></div>
+                <h4>Electrolysis Chambers</h4>
+                <p>2–5 chambers at centralised processing facilities. High-capacity machines expandable to accommodate changing hydrogen generation needs.</p>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-snowflake"></i></div>
+                <h4>Cryogenic Refrigerators</h4>
+                <p>Required to liquefy hydrogen below −253°C, a necessary step for converting hydrogen into green methanol. Uses helium refrigerant with regular replenishment.</p>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-truck"></i></div>
+                <h4>Transport Fleet (10+ Trucks)</h4>
+                <p>Dedicated vehicles for moving captured CO₂ from urban collection points to central processing plants under secure conditions, ensuring reliable delivery.</p>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-database"></i></div>
+                <h4>AI Monitoring Systems</h4>
+                <p>Continuous real-time monitoring of CO₂ levels, emissions, and operational efficiency across all units — providing data-driven insights to optimise performance and ensure regulatory compliance.</p>
+            </div>
+        </div>
+
+        <div class="section-label">Execution Roadmap</div>
+        <div class="roadmap">
+            <div class="r-phase">
+                <div class="r-phase-num">Phase 1</div>
+                <div class="r-phase-dur">3–6 Months</div>
+                <h4>R&amp;D &amp; Prototype Development</h4>
+                <p>Develop prototypes, system testing, process optimisation, and regulatory permits. Establishes the groundwork for scalable, dependable systems.</p>
+            </div>
+            <div class="r-phase">
+                <div class="r-phase-num">Phase 2</div>
+                <div class="r-phase-dur">1 Year</div>
+                <h4>Infrastructure Setup</h4>
+                <p>Install cutting-edge systems in initial factories, implement urban CO₂ collection units, and establish centralised processing to maximise efficiency.</p>
+            </div>
+            <div class="r-phase">
+                <div class="r-phase-num">Phase 3</div>
+                <div class="r-phase-dur">6 Months</div>
+                <h4>Pilot Testing &amp; Feedback</h4>
+                <p>Thorough trials, comprehensive data gathering, and technology refinement based on real-world feedback for optimal performance under various conditions.</p>
+            </div>
+            <div class="r-phase">
+                <div class="r-phase-num">Phase 4</div>
+                <div class="r-phase-dur">4–7 Years</div>
+                <h4>Full Implementation &amp; Expansion</h4>
+                <p>Expand across multiple regions, increase processing units, and establish an efficient Green Methanol and Hydrogen distribution network at scale.</p>
+            </div>
+            <div class="r-phase">
+                <div class="r-phase-num">Phase 5</div>
+                <div class="r-phase-dur">Ongoing</div>
+                <h4>Operations &amp; Maintenance</h4>
+                <p>Continuous management, regular system audits, ongoing efficiency improvements, and regular maintenance checks to endorse a circular economic model.</p>
+            </div>
+        </div>
+
+        <div class="section-label">Partnerships &amp; Stakeholders</div>
+        <div class="partners-grid">
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-landmark"></i></div>
+                <h4>Government Bodies</h4>
+                <p>Regional partnerships across the Middle East for regulatory compliance, policy support, and advancing green tech adoption. Government endorsement enhances credibility and optimises approval procedures for wider system acceptance.</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-university"></i></div>
+                <h4>Universities &amp; Research</h4>
+                <p>Collaborative R&amp;D, innovative solutions, and technical personnel training through partnerships with multiple academic institutions. Fosters ongoing innovation, strengthens technical expertise, and drives continual enhancements.</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-building"></i></div>
+                <h4>Private Sector</h4>
+                <p>Partnerships across energy, manufacturing, and transport industries for technology adoption, investment, and market expansion. Enables broader market access, collaborative partnerships, and commercial growth opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Refuel" class="footer-logo-img" onerror="this.style.display='none'">
+            REFUEL <span>CARBON TECH</span>
+        </div>
+        <p>Building a resilient, sustainable future for the Middle East.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
